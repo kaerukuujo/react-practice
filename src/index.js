@@ -1,21 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reactLogo from './img/React-icon.png';
-const page = (
-  <div>
-    <img src={reactLogo} width='100px' alt='react-logo' className='img'/>  
-    <h1> Fun facts about React </h1>
-    <ul>
-      <li>Was first created in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100k starts on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including <br/> 
-      mobile apps</li>  
-    </ul>
-  </div>  
-)
 
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src={reactLogo} width='100px' alt='React-logo'/>
+      </nav>
+    </header> 
+  )
+};
+
+function MainContent() {
+  return(
+    <div>
+      <h1>Reasons im excited to learn React</h1>
+      <ol>
+        <li>react1</li>
+        <li>react2</li>
+        <li>react3</li>
+        <li>react4</li>
+      </ol>
+    </div>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>© 2023 blkbr development. All rights reserved.</small>
+    </footer>
+  )
+};
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  )
+}; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(page);
+root.render(<Page />);
