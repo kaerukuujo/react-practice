@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-const navbar = (
-  <nav>
-    <h1>Bob's axes</h1>
+import reactLogo from './img/React-icon.png';
+const page = (
+  <div>
+    <img src={reactLogo} width='100px' alt='react-logo' className='img'/>  
+    <h1> Fun facts about React </h1>
     <ul>
-      <li>Menu</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li>Was first created in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has well over 100k starts on Github</li>
+      <li>Is maintained by Facebook</li>
+      <li>Powers thousands of enterprise apps, including <br/> 
+      mobile apps</li>  
     </ul>
-  </nav>
+  </div>  
 )
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(navbar);
+root.render(page);
