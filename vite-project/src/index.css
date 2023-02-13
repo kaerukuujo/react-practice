@@ -1,0 +1,54 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  background-color: #21222A; 
+  height: 90px;
+  padding: 30px 25px;
+
+}
+.navLeft {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  align-items: center;
+  color: rgb(110, 226, 255);
+  margin-right: auto;
+}
+.navRight {
+  display: flex;  
+
+}
+.courseText {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.mainContent {
+  height: 100vh;
+  background-color: #212231;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.mainHead {
+  font-weight: 800;
+  font-size: 45px;
+  margin: 30px;
+  margin-top: 40px;
+}
+.listContent {
+  margin-left: 85px;
+}
+.listContent>li {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+}
